@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  /* overflow: hidden; */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .primary__nav {
+    width: auto;
+    position: absolute;
+    inset: 0 20% 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    padding: 6rem 1rem 1rem;
+    box-shadow: 6px 3px 12px rgb(0, 0, 0, 0.05);
+    transform: translateX(-100%);
+    transition: all ease 300ms;
+  }
+  .nav-active {
+    transform: translateX(0);
+  }
+  .primary__nav-list {
+    order: 2;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
