@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import MovieCard from "./components/MovieCard";
+import MovieDetail from "./components/MovieDetail";
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
     <div className="App min-h-screen">
       <div className="container mx-auto w-[95%]">
         <Navigation onSearch={getSearch} />
-        {/* <Home /> */}
-        <MovieCard />
+        <Home />
+        {/* <MovieCard /> */}
+
       </div>
     </div>
   );
