@@ -28,7 +28,6 @@ function Popular() {
 
   function handleMore() {
     setPage(prevPage => prevPage += 1);
-    console.log(page);
   }
 
   return (
